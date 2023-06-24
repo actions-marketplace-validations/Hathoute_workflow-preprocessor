@@ -66,7 +66,7 @@ jobs:
       # Only create tag when dist/ folder has changed.
       - name: Get changed files in the dist/ folder
         id: changed-files-specific
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v37
         with:
           files: dist/*
       - name: Bump version and push tag
