@@ -50,7 +50,7 @@ jobs:
   test-node:
     runs-on: arc-systems
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -71,7 +71,7 @@ jobs:
     runs-on: arc-systems
     needs: [test-node]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.2
       - name: Delete existing dist/ directory
         run: rm -rf dist
       - uses: actions/download-artifact@v3
